@@ -58,10 +58,10 @@ public class Student {
 
              while (italianResultSet.next()) {
 
-                String first_name = italianResultSet.getString("first_name");
-                String last_name = italianResultSet.getString("last_name");
+                String name = italianResultSet.getString("first_name");
+                String surname = italianResultSet.getString("last_name");
 
-                italianStudents.add(new Student(first_name, last_name));
+                italianStudents.add(new Student(name, surname));
              }
 
 
@@ -71,10 +71,10 @@ public class Student {
 
             while (germanResultSet.next()) {
 
-                String first_name = germanResultSet.getString("first_name");
-                String last_name = germanResultSet.getString("last_name");
+                String name = germanResultSet.getString("first_name");
+                String surname = germanResultSet.getString("last_name");
 
-                germanStudents.add(new Student(first_name, last_name));
+                germanStudents.add(new Student(name, surname));
             }
 
 
